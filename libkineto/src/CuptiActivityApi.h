@@ -67,7 +67,7 @@ class CuptiActivityApi {
       CuptiActivityBufferMap&,
       std::function<void(const CUpti_Activity*)> handler);
 
-  void setMaxBufferSize(int size);
+  void setMaxBufferSize(int64_t size);
   void setDeviceBufferSize(size_t size);
   void setDeviceBufferPoolLimit(size_t limit);
 

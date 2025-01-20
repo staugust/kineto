@@ -208,7 +208,7 @@ class Config : public AbstractConfig {
     return activitiesRunIterations_;
   }
 
-  int activitiesMaxGpuBufferSize() const {
+  int64_t activitiesMaxGpuBufferSize() const {
     return activitiesMaxGpuBufferSize_;
   }
 
@@ -441,7 +441,7 @@ class Config : public AbstractConfig {
   // Log activities to memory buffer
   bool activitiesLogToMemory_{false};
 
-  int activitiesMaxGpuBufferSize_;
+  int64_t activitiesMaxGpuBufferSize_;
   std::chrono::seconds activitiesWarmupDuration_;
   int activitiesWarmupIterations_;
   bool activitiesCudaSyncWaitEvents_;
